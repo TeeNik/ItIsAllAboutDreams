@@ -1,0 +1,24 @@
+0
+No one|Ohh, gosh! This night was amazing! 
+No one|Stop, there am I?! It's really familliar with my room, but something is wrong. Aaaaah wait! 
+No one|Where is the deus ex poster? I need to find them all and check out what's going on here.
+1
+No one|Gendalf the Grey?
+Gendalf|I don't remember this name.
+No one|Whatever. Tell me, please, where am I?
+Gendalf|Are you kidding? These statistic bars up there
+(*they show you, how much health, mana and expirience points you have*),
+pixel art stylization and cheap diaogs don't tell you anything, do they?
+No one|OMG... *whisper* indi-schmindi dermetzo.
+No one|*translation* annual 2d pixel ultra popular "original" hipster indi game.
+No one|Nevertheless, they have caught me.
+2
+Zool|Hallo, customer.
+No one|Good morning. i'm looking for some magic staff.
+Zool|Magic staff? I understand you. I have a couple weed there...
+No one|No no. It's about magic weapon.
+Zool|I've one. It'll cost you 5 coins.
+No one|But I have not money at all.
+Zool|Maybe you'll find some, if you walk around.
+Zool|I've heard there was a room fool of treasures.
+Zool|But it's said to be cursed by ancient spirit.

@@ -1,0 +1,395 @@
+[
+
+  {
+    "id": 1,
+    "title": "Usual Sword",
+    "value": 20,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "A common sword. There is a one in almost every game.",
+    "stackable": false,
+    "rarity": 1,
+    "slug": "usual_sword",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 2,
+    "title": "Grass Sword",
+    "value": 30,
+    "stats": {
+      "strength": 0,
+      "intelligence": 1,
+      "stamina": 0,
+      "dexterity": 1
+    },
+    "description": "It's green! And soft, and elastic, and cool!",
+    "stackable": false,
+    "rarity": 2,
+    "slug": "grass_sword",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 3,
+    "title": "Fire Sword",
+    "value": 45,
+    "stats": {
+      "strength": 2,
+      "intelligence": 0,
+      "stamina": 2,
+      "dexterity": 0
+    },
+    "description": "It's flaming... I have the same in Zelda!",
+    "stackable": false,
+    "rarity": 3,
+    "slug": "fire_sword",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 4,
+    "title": "Ice Sword",
+    "value": 45,
+    "stats": {
+      "strength": 0,
+      "intelligence": 3,
+      "stamina": 0,
+      "dexterity": 1
+    },
+    "description": "Hoooo... I'm just like a Lich King...",
+    "stackable": false,
+    "rarity": 3,
+    "slug": "ice_sword",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 5,
+    "title": "Dark Sword",
+    "value": 55,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 5,
+      "dexterity": 0
+    },
+    "description": "You can hear a whisper inside...",
+    "stackable": false,
+    "rarity": 3,
+    "slug": "dark_sword",
+    "cost": 0,
+    "type": "Weapon"
+  },
+    {
+      "id": 6,
+      "title": "White Sword",
+      "value": 55,
+      "stats": {
+        "strength": 2,
+        "intelligence": 2,
+        "stamina": 0,
+        "dexterity": 2
+      },
+      "description": "Gendalf style!!!",
+      "stackable": false,
+      "rarity": 4,
+      "slug": "white_sword",
+      "cost": 0,
+      "type": "Weapon"
+    },
+    {
+      "id": 10,
+      "title": "Health Potion",
+      "value": 40,
+      "stats": {
+        "strength": 0,
+        "intelligence": 0,
+        "stamina": 0,
+        "dexterity": 0
+      },
+      "description": "I wish I have one in real life.",
+      "stackable": true,
+      "rarity": 0,
+      "slug": "health_potion",
+      "cost": 0,
+      "type": "Consumable"
+    },
+  {
+    "id": 11,
+    "title": "Mana Potion",
+    "value": 40,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "OMG!!! I have magic powers!!!",
+    "stackable": true,
+    "rarity": 0,
+    "slug": "mana_potion",
+    "cost": 0,
+    "type": "Consumable"
+  },
+  {
+    "id": 20,
+    "title": "Usual Staff",
+    "value": 20,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "A wooden staff. I made the same in childhood, but in hadn't have a real power.",
+    "stackable": false,
+    "rarity":1,
+    "slug": "usual_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 21,
+    "title": "Topaz Staff",
+    "value": 25,
+    "stats": {
+      "strength": 1,
+      "intelligence": 1,
+      "stamina": 1,
+      "dexterity": 0
+    },
+    "description": "Here should be a description.",
+    "stackable": false,
+    "rarity": 2,
+    "slug": "topaz_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 22,
+    "title": "Sapphire Staff.",
+    "value": 35,
+    "stats": {
+      "strength": 2,
+      "intelligence": 1,
+      "stamina": 1,
+      "dexterity": 2
+    },
+    "description": "Awwwww! There is a sapphire. It's me favorite gem!!!",
+    "stackable": false,
+    "rarity": 2,
+    "slug": "sapphire_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 23,
+    "title": "Quartz Staff",
+    "value": 40,
+    "stats": {
+      "strength": 2,
+      "intelligence": 2,
+      "stamina": 1,
+      "dexterity": 1
+    },
+    "description": "It's flickering and pink!  I like it!",
+    "stackable": false,
+    "rarity": 3,
+    "slug": "quartz_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 24,
+    "title": "Hell Staff",
+    "value": 40,
+    "stats": {
+      "strength": 1,
+      "intelligence": 2,
+      "stamina": 2,
+      "dexterity": 1
+    },
+    "description": "I suppose it's from new \"Lucifer\" comics.",
+    "stackable": false,
+    "rarity": 3,
+    "slug": "hell_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 25,
+    "title": "Obsidian Staff",
+    "value": 45,
+    "stats": {
+      "strength": 2,
+      "intelligence": 3,
+      "stamina": 2,
+      "dexterity": 0
+    },
+    "description": "I was dreaming about this since I've been fifteen.",
+    "stackable": false,
+    "rarity": 4,
+    "slug": "obsidian_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 26,
+    "title": "White Staff",
+    "value": 45,
+    "stats": {
+      "strength": 4,
+      "intelligence": 4,
+      "stamina": 4,
+      "dexterity": 4
+    },
+    "description": "Gendalf style!!! P.S Coolest thing alive.",
+    "stackable": false,
+    "rarity": 4,
+    "slug": "white_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 27,
+    "title": "Jungle Staff",
+    "value": 35,
+    "stats": {
+      "strength": 1,
+      "intelligence": 1,
+      "stamina": 1,
+      "dexterity": 1
+    },
+    "description": "Power of mayan priest!",
+    "stackable": false,
+    "rarity": 2,
+    "slug": "jungle_staff",
+    "cost": 0,
+    "type": "Weapon"
+  },
+  {
+    "id": 30,
+    "title": "Illusion Scroll",
+    "value": 0,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "Do some illusion staff.",
+    "stackable": true,
+    "rarity": 0,
+    "slug": "illusion_scroll",
+    "cost": 0,
+    "type": "Consumable"
+  },
+  {
+    "id": 50,
+    "title": "Fireball",
+    "value": 25,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "Standart spell of all wizards",
+    "stackable": false,
+    "rarity": 0,
+    "slug": "fireball",
+    "cost": 0,
+    "type": "Spell"
+  },
+  {
+    "id": 51,
+    "title": "Icicle",
+    "value": 30,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "Not original. But it's really cool. Can slow down an enemy.",
+    "stackable": false,
+    "rarity": 0,
+    "slug": "icicle",
+    "cost": 0,
+    "type": "Spell"
+  },
+  {
+    "id": 52,
+    "title": "Shock",
+    "value": 25,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "Power of electricity!!!",
+    "stackable": false,
+    "rarity": 0,
+    "slug": "shock",
+    "cost": 0,
+    "type": "Spell"
+  },
+  {
+    "id": 53,
+    "title": "Tornado",
+    "value": 30,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "Goes through all enemies.",
+    "stackable": false,
+    "rarity": 0,
+    "slug": "tornado",
+    "cost": 0,
+    "type": "Spell"
+  },
+  {
+    "id": 54,
+    "title": "Heal",
+    "value": 30,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "Treats cough,  cold and stabbed.",
+    "stackable": false,
+    "rarity": 0,
+    "slug": "heal",
+    "cost": 0,
+    "type": "Spell"
+  },
+  {
+    "id": 60,
+    "title": "Coin",
+    "value": 1,
+    "stats": {
+      "strength": 0,
+      "intelligence": 0,
+      "stamina": 0,
+      "dexterity": 0
+    },
+    "description": "Money! Everyone loves money!",
+    "stackable": true,
+    "rarity": 0,
+    "slug": "coin",
+    "cost": 0,
+    "type": "NoUse"
+  }
+
+]

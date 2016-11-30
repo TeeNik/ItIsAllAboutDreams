@@ -6,7 +6,7 @@ public class ProjectileMover : MonoBehaviour {
 
     //public float speed;
     public Vector2 speed;
-    public float damage;
+    public int damage;
 
     Animator anim;
 

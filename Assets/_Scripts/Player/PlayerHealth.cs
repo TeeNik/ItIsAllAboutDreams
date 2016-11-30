@@ -4,11 +4,11 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
 
-    public float maxHealth;
-    public float maxMana;
+    public int maxHealth;
+    public int maxMana;
 
-    public float currentHealth;
-    public float currentMana;
+    public int currentHealth;
+    public int currentMana;
 
     public bool immortal = false;
     public float immortalTime;
@@ -18,6 +18,8 @@ public class PlayerHealth : MonoBehaviour {
     public int charism;
     public int dexterity;
     public int gamingSkills;
+
+    public int shield;
 
     public Image healthBar;
     public Image manaBar;
@@ -53,8 +55,8 @@ public class PlayerHealth : MonoBehaviour {
             GetComponent<Animator>().SetTrigger("die");
         }
 
-        healthBar.fillAmount = currentHealth / maxHealth;
-        manaBar.fillAmount = currentMana / maxMana;   
+        healthBar.fillAmount = (float)currentHealth / (float)maxHealth;
+        manaBar.fillAmount = (float)currentMana / (float)maxMana;   
 
     }
 
@@ -64,10 +66,24 @@ public class PlayerHealth : MonoBehaviour {
         else return false;
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         if (!immortal)
         {
+            if(shield > 0)
+            {
+                if(shield >= damage)
+                {
+                    shield -= damage;
+                    damage = 0;                 
+                }
+                else
+                {
+                    damage -= shield;
+                    shield = 0;
+                }
+            }
+
             currentHealth -= damage;
             if (!isDead)
             {             
@@ -101,7 +117,7 @@ public class PlayerHealth : MonoBehaviour {
         }   
     }
 
-    public void SpendMana(float mana)
+    public void SpendMana(int mana)
     {
         currentMana -= mana;
     }

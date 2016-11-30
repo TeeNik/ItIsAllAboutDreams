@@ -4,7 +4,7 @@ using System.Collections;
 public class MeleeAttack : MonoBehaviour {
 
     public BoxCollider2D collider;
-    public float damage;
+    public int damage;
 
     Vector3 v;
     

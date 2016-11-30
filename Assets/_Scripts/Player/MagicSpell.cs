@@ -8,6 +8,7 @@ public class MagicSpell : MonoBehaviour {
     public GameObject icicle;
     public GameObject heal;
     public GameObject tornado;
+    public GameObject basicShield;
 
 
     void FixedUpdate()
@@ -18,7 +19,7 @@ public class MagicSpell : MonoBehaviour {
             Heal();
             Icicle();
             Tornado();
-
+            BasicShield();
 
         }
     }
@@ -66,6 +67,21 @@ public class MagicSpell : MonoBehaviour {
 
             ChooseDirection(clone);
         }      
+    }
+
+    void BasicShield()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            GameObject clone = Instantiate(basicShield, transform.position, transform.rotation) as GameObject;
+            clone.name = "Shield";
+
+            clone.transform.SetParent(transform);
+
+            GetComponent<PlayerHealth>().shield += 50;
+
+            Destroy(clone, 10);
+        }
     }
 
     public void ChooseDirection(GameObject clone)

@@ -24,6 +24,8 @@ public class PlayerHealth : MonoBehaviour {
     public Image healthBar;
     public Image manaBar;
 
+    public GameObject shieldObj;
+
     public bool isDead
     {
         get
@@ -81,15 +83,20 @@ public class PlayerHealth : MonoBehaviour {
                 {
                     damage -= shield;
                     shield = 0;
+                    Destroy(shieldObj);
+                    //тут уничтожается щит
                 }
             }
 
             currentHealth -= damage;
             if (!isDead)
-            {             
-                GetComponent<Animator>().SetTrigger("damage");
-                StartCoroutine(SetImmortal(immortalTime));
-                StartCoroutine(Blink());
+            {                          
+                if (shield <= 0)
+                {
+                    GetComponent<Animator>().SetTrigger("damage");
+                    StartCoroutine(SetImmortal(immortalTime)); 
+                    StartCoroutine(Blink()); //не блинкует если есть щит
+                }
             }
             else
             {

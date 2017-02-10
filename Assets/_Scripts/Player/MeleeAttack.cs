@@ -37,7 +37,6 @@ public class MeleeAttack : MonoBehaviour {
         {
             other.GetComponent<Rigidbody2D>().AddForce( Vector2.right * 3000);
             other.GetComponent<PlayerHealth>().TakeDamage(damage);
-            print(other.name);
         }
     }
 }

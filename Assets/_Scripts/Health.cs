@@ -34,14 +34,29 @@ public class Health : MonoBehaviour {
 
         if(isDead)
         {
-            GetComponent<Animator>().SetTrigger("die");
+            try
+            {
+                GetComponent<Animator>().SetTrigger("die");
+            }
+            catch(MissingComponentException)
+            {
+                //ну нет у него анимации, просто уничтоже его
+                Destroy(gameObject);
+            }
         }
     }
 
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        GetComponent<Animator>().SetTrigger("damage");
+        try
+        {
+            GetComponent<Animator>().SetTrigger("damage");
+        }
+        catch(MissingComponentException)
+        {
+            //ничего страшного, если у него нет анимации
+        }
     }
 
     public void SpendMana(float mana)

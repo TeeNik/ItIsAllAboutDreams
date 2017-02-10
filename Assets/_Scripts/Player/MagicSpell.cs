@@ -20,6 +20,7 @@ public class MagicSpell : MonoBehaviour {
             Icicle();
             Tornado();
             BasicShield();
+            Icetacle();
 
         }
     }
@@ -73,14 +74,30 @@ public class MagicSpell : MonoBehaviour {
     {
         if(Input.GetKeyDown(KeyCode.Alpha5))
         {
+            if(GetComponent<PlayerHealth>().shield != 0)
+            {
+                return; //невозможность создать новый щит, пока не кончился старый
+            }
             GameObject clone = Instantiate(basicShield, transform.position, transform.rotation) as GameObject;
             clone.name = "Shield";
 
             clone.transform.SetParent(transform);
+            GetComponent<PlayerHealth>().shieldObj = clone;
 
-            GetComponent<PlayerHealth>().shield += 50;
+            GetComponent<PlayerHealth>().shield = 50;
 
             Destroy(clone, 10);
+        }
+    }
+
+    void Icetacle()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            GameObject clone = Instantiate(icicle, shotPoint.position, shotPoint.rotation) as GameObject;
+            clone.name = "Icetacle";
+
+            ChooseDirection(clone);
         }
     }
 

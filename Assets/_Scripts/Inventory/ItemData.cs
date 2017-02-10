@@ -61,7 +61,6 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragH
         if (item != null && eventData.button == PointerEventData.InputButton.Right)
         {
             GameObject.Find("Inventory").GetComponent<Inventory>().Use(slot);
-            print("lol");
         }
 
         if (item != null)

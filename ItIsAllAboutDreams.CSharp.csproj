@@ -66,6 +66,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Glitch\AnalogGlitch.cs" />
+    <Compile Include="Assets\Glitch\DigitalGlitch.cs" />
     <Compile Include="Assets\_Scripts\Dark.cs" />
     <Compile Include="Assets\_Scripts\Dialogue.cs" />
     <Compile Include="Assets\_Scripts\DialoguePoint.cs" />
@@ -119,6 +121,8 @@
     <Compile Include="Assets\_Scripts\World\SpellEffects.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Glitch\Shader\AnalogGlitch.shader" />
+    <None Include="Assets\Glitch\Shader\DigitalGlitch.shader" />
     <None Include="Assets\StreamingAssets\Dialog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

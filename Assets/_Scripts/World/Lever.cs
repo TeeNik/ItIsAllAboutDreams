@@ -7,7 +7,6 @@ public class Lever : MonoBehaviour, IUseable {
     public GameObject door;
 
     public bool hasDoorAnimation;
-    public bool destroyDoor;
     public bool destroyLever;
 
     public void Use()
@@ -19,9 +18,6 @@ public class Lever : MonoBehaviour, IUseable {
         }
         else if(hasDoorAnimation)
             door.GetComponent<Animator>().SetTrigger("use");
-
-        if (destroyDoor)
-            Destroy(door, 2);
 
         if (destroyLever)
         {

@@ -23,11 +23,13 @@ public class QuestCheck : MonoBehaviour, IUseable
                     StartCoroutine(inventory.GetComponent<Dialogue>().PlayDialog(4));
                     inventory.GetComponent<Inventory>().SpendMoney(4);
                     inventory.GetComponent<Inventory>().AddItem(20);
+                    GameObject.Find("MagicFlame").GetComponent<Animator>().SetTrigger("use");
                 }
                 else if(inventory.GetComponent<AdditionalVariables>().zoolPlease == 3)
                 {
                     StartCoroutine(inventory.GetComponent<Dialogue>().PlayDialog(5));
                     inventory.GetComponent<Inventory>().AddItem(20);
+                    GameObject.Find("MagicFlame").GetComponent<Animator>().SetTrigger("use");
                 }
                 else
                 {

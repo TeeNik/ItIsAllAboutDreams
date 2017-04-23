@@ -19,13 +19,13 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragH
         inv = GameObject.Find("Inventory").GetComponent<Inventory>();
 
         spellPanel = GameObject.Find("Inventory").GetComponent<SpellPanel>();
-
         amount = 1;
         tooltip = inv.GetComponent<Tooltip>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        
         if(item != null)
         { 
             transform.SetParent(transform.parent.parent.parent.parent);
@@ -58,6 +58,7 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragH
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        print(45);
         if (item != null && eventData.button == PointerEventData.InputButton.Right)
         {
             GameObject.Find("Inventory").GetComponent<Inventory>().Use(slot);

@@ -8,17 +8,34 @@ Gendalf|I don't remember this name.
 No one|Whatever. Tell me, please, where am I?
 Gendalf|Are you kidding? These statistic bars up there
 (*they show you, how much health, mana and expirience points you have*),
-pixel art stylization and cheap diaogs don't tell you anything, do they?
+pixel art stylization and cheap dialogs don't tell you anything, do they?
 No one|OMG... *whisper* indi-schmindi dermetzo.
 No one|*translation* annual 2d pixel ultra popular "original" hipster indi game.
 No one|Nevertheless, they have caught me.
 2
 Zool|Hallo, customer.
 No one|Good morning. i'm looking for some magic staff.
-Zool|Magic staff? I understand you. I have a couple weed there...
+Zool|Magic staff? I understand you. I have a couple weeds here...
 No one|No no. It's about magic weapon.
-Zool|I've one. It'll cost you 5 coins.
+Zool|I have one. It'll cost you 5 coins.
 No one|But I have not money at all.
 Zool|Maybe you'll find some, if you walk around.
 Zool|I've heard there was a room fool of treasures.
 Zool|But it's said to be cursed by ancient spirit.
+3
+Zool|5 coins and the staff is yours.
+No one|I have not enough. Can I grab it for free? Pleeease.
+Zool|Nope.
+4
+Zool|5 coins and the staff is yours.
+No one|So exited! My first magic deal.
+Zool|It's yours. Read the instruction first.
+Zool|Also I opened a magic block for you.
+Zool|Now you can explore another parts of castle.
+5
+Zool|5 coins and the staff is yours.
+No one|I have not enough. Can I grab it for free? Pleeease.
+Zool|Aaahhhr. If you wanna you can take it. And get out of here!! I have a headache after you.
+Zool|Also I opened a magic block for you.
+Zool|Now you can annoy another parts of castle.
+

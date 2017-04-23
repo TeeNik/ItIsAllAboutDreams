@@ -46,7 +46,12 @@ public class Inventory : MonoBehaviour {
         AddItem(10);
         AddItem(10);
         AddItem(30);
-        
+        AddItem(60);
+        AddItem(60);
+        AddItem(60);
+        AddItem(60);
+        AddItem(60);
+        AddItem(60);
     }
 
     public void AddItem(int id)
@@ -87,7 +92,7 @@ public class Inventory : MonoBehaviour {
         
     }
 
-    public void RemoveItem(int slot)
+    public void RemoveItem(int slot, int num = 1)
     {
         ItemData it = slots[slot].transform.GetChild(0).GetComponent<ItemData>();
         if (slots[slot].transform.GetChild(0).GetComponent<ItemData>().amount == 1)
@@ -105,7 +110,7 @@ public class Inventory : MonoBehaviour {
         }
         else
         {
-            it.amount--;
+            it.amount -= num;
             if(it.amount == 1)
                 it.transform.GetChild(0).GetComponent<Text>().text = "";
             else
@@ -132,6 +137,34 @@ public class Inventory : MonoBehaviour {
             if (items[i].ID == item.ID)
                 return true;
         return false;
+    }
+
+    public int GetMoney()
+    {
+        for (int i = 0; i < slotAmount; ++i)
+        {
+            if (slots[i].transform.GetChild(0).GetComponent<ItemData>().item.ID == 60)
+            {
+                return slots[i].transform.GetChild(0).GetComponent<ItemData>().amount;
+            }
+        }
+
+        return 0;
+    }
+
+    public void SpendMoney(int sum)
+    {
+        int slot = 0;
+        for(int i = 0; i < slotAmount; ++i)
+        {
+            if (slots[i].transform.GetChild(0).GetComponent<ItemData>().item.ID == 60)
+            {
+                slot = i;
+                break;
+            }
+        }
+
+        RemoveItem(slot, sum);
     }
 
 

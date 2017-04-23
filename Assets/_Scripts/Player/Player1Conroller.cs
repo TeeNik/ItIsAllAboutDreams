@@ -208,7 +208,7 @@ public class Player1Conroller : MonoBehaviour {
                 useable.Use();
                 useable = null;
             }
-            else if(useable.GetType() == "Door")
+            else if(useable.GetType() == "Door" || useable.GetType() == "Quest")
             {
                 useable.Use();
             }

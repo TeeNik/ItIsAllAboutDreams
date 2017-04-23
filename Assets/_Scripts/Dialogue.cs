@@ -73,7 +73,6 @@ public class Dialogue : MonoBehaviour {
 
         foreach (string str in dialogs[d])
         {
-            print(str);
             int currentCharIndex = 0;
             textComponent.text = "";
 

@@ -7,6 +7,7 @@ public class ProjectileMover : MonoBehaviour {
     //public float speed;
     public Vector2 speed;
     public int damage;
+    public int deathTime = 5;
 
     Animator anim;
 
@@ -25,7 +26,7 @@ public class ProjectileMover : MonoBehaviour {
 	void Start () {
         GetComponent<Rigidbody2D>().velocity = speed;
        
-        DestroyProjectile(5);
+        DestroyProjectile(deathTime);
 	}
 	
 	
@@ -50,6 +51,14 @@ public class ProjectileMover : MonoBehaviour {
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             anim.SetTrigger("dead");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.collider.tag == "Player")
+        {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
         }
     }
 

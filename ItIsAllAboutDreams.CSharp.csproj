@@ -116,6 +116,7 @@
     <Compile Include="Assets\_Scripts\Player\StaffAttack.cs" />
     <Compile Include="Assets\_Scripts\QuestCheck.cs" />
     <Compile Include="Assets\_Scripts\World\AutoShot.cs" />
+    <Compile Include="Assets\_Scripts\World\AutoSpikes.cs" />
     <Compile Include="Assets\_Scripts\World\Barrel.cs" />
     <Compile Include="Assets\_Scripts\World\BigPlate.cs" />
     <Compile Include="Assets\_Scripts\World\CollisionTrigger.cs" />

@@ -29,9 +29,14 @@ public class CameraFollow : MonoBehaviour {
 
         if(bounds)
         {
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minCameraPos.y, maxCameraPos.x),
+            /*transform.position = new Vector3(Mathf.Clamp(transform.position.x, minCameraPos.y, maxCameraPos.x),
             Mathf.Clamp(transform.position.y, minCameraPos.y, maxCameraPos.y), 
-            Mathf.Clamp(transform.position.z, minCameraPos.z, maxCameraPos.z));
+            Mathf.Clamp(transform.position.z, minCameraPos.z, maxCameraPos.z));*/
+            if (transform.position.x < minCameraPos.x) transform.position = new Vector3(minCameraPos.x, transform.position.y, transform.position.z);
+            if (transform.position.y < minCameraPos.y) transform.position = new Vector3(transform.position.x, minCameraPos.y, transform.position.z);
+
+            if (transform.position.x > maxCameraPos.x) transform.position = new Vector3(maxCameraPos.x, transform.position.y, transform.position.z);
+            if (transform.position.y > maxCameraPos.y) transform.position = new Vector3(transform.position.x, maxCameraPos.y, transform.position.z);
         }
     }
 }

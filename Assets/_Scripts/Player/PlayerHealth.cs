@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour {
     public Image manaBar;
 
     public GameObject shieldObj;
+    public Transform respawnPoint;
 
     public bool isDead
     {
@@ -54,7 +55,8 @@ public class PlayerHealth : MonoBehaviour {
 
         if (isDead)
         {
-            GetComponent<Animator>().SetTrigger("die");
+            //GetComponent<Animator>().SetTrigger("die");
+            transform.position = respawnPoint.position;
         }
 
         healthBar.fillAmount = (float)currentHealth / (float)maxHealth;
@@ -100,7 +102,10 @@ public class PlayerHealth : MonoBehaviour {
             }
             else
             {
-                GetComponent<Animator>().SetTrigger("die");
+                transform.position = respawnPoint.position;
+                currentHealth = maxHealth;
+                currentMana = maxMana;
+                //GetComponent<Animator>().SetTrigger("die");
             }
         }
 

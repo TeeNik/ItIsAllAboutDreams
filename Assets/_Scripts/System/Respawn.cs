@@ -14,7 +14,8 @@ public class Respawn : MonoBehaviour{
             {
                 player.GetComponent<PlayerHealth>().respawnPoint.GetChild(0).gameObject.SetActive(false);
             }
-            player.GetComponent<PlayerHealth>().respawnPoint = transform;
             transform.GetChild(0).gameObject.SetActive(true);
+            player.GetComponent<PlayerHealth>().respawnPoint = transform;
+            
     }
 }
